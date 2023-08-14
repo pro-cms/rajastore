@@ -18,7 +18,8 @@ Login
            <center>
             <img src="{{asset('logo.webp')}}" class="img img-fluid" style="height: 250px" alt="">
            </center>
-            <form action="">
+            <form action="{{route('login')}}" method="POST">
+                @csrf
             <div class="form-group">
                  <label for="">Phone</label>
                  <input type="number" class="form-control" name="phone" placeholder="0XXXXXXXX">

@@ -18,8 +18,7 @@ return new class extends Migration
             $table->string('original_price');
             $table->string('current_price');
             $table->string('image')->nullable();
-            $table->foreignId('brand_id');
-            $table->timestamps();
+             $table->timestamps();
         });
     }
 

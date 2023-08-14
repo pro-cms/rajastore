@@ -18,7 +18,8 @@ Login
            <center>
             <img src="{{asset('logo.webp')}}" class="img img-fluid" style="height: 250px" alt="">
            </center>
-            <form action="">
+            <form action="{{route('register')}}" method="POST">
+                @csrf
             <div class="form-group">
                  <label for="">Full Name</label>
                  <input type="text" class="form-control" name="name" placeholder="eg Neema Zepson">
